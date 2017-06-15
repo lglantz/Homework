@@ -1,0 +1,305 @@
+/*
+Project Name: Blank Template
+Client: Your Client
+Author: Your Name
+Developer @GA in NYC
+*/
+
+
+/******************************************
+/* SETUP
+/*******************************************/
+
+/* Box Model Hack */
+* {
+     -moz-box-sizing: border-box; /* Firexfox */
+     -webkit-box-sizing: border-box; /* Safari/Chrome/iOS/Android */
+     box-sizing: border-box; /* IE */
+}
+
+/* Clear fix hack */
+.clearfix:after {
+     content: ".";
+     display: block;
+     clear: both;
+     visibility: hidden;
+     line-height: 0;
+     height: 0;
+}
+
+.clear {
+  clear: both;
+}
+
+.alignright {
+  float: right;
+  padding: 0 0 10px 10px; /* note the padding around a right floated image */
+}
+
+.alignleft {
+  float: left;
+  padding: 0 10px 10px 0; /* note the padding around a left floated image */
+}
+
+/******************************************
+/* BASE STYLES
+/*******************************************/
+
+body {
+     color: #000;
+     font-size: 12px;
+     line-height: 1.4;
+     font-family: "open sans", Helvetica, Arial, sans-serif;
+     background-color: black;
+}
+
+
+/******************************************
+/* LAYOUT
+/*******************************************/
+
+/* Center the container */
+#container {
+  width: 100%;
+  margin: auto;
+  height: 500px;
+}
+
+header {
+  background: url(../images/header_bg.jpg) no-repeat center top rgb(134,141,157);
+  background-size: cover;
+  height: 450px;
+  width: auto;
+  padding: 0px 50px;
+
+}
+
+.benefits {
+  background-color: #f0efef;
+  padding: 30px 50px 50px 50px;
+}
+
+.features {
+  background-color: #f9e42e;
+}
+
+
+.testimonial {
+  background: url(../images/testimonial_bg.jpg) no-repeat center top rgb(134,141,157);
+   background-size: cover;
+   height: 250px;
+   width: auto;
+   margin-top: 0px;
+}
+
+.sign_up {
+  background-color: #f9e42e;
+  height: 75px;
+}
+
+/* centering the sign up button*/
+.button_container {
+  padding-top: 20px;
+}
+
+/* feature stuff */
+
+.feature_wrapper {
+  margin: 0px auto;
+  width: 80%;
+  text-align: center;
+  padding-bottom: 100px;
+}
+
+.feature_holder {
+  display: inline-block;
+  width: 150px;
+  height: 200px;
+  padding: 100px 30px;
+}
+
+.feature_left {
+  float: left;
+}
+
+.feature_right {
+  float: right;
+}
+
+.feature_center {
+  margin:0 auto
+}
+
+.feature {
+  background-color: #357EC7;
+  height: 100px;
+  width: 100px;
+}
+
+footer {
+  height: 250px;
+  background-color: #121212;
+}
+
+/* centering the social media in footer*/
+.footer_wrapper {
+  margin: 0 auto;
+  width: 30%;
+  text-align: center;
+}
+
+.footer_image_container {
+  width: 20px;
+  margin: 0 10px;
+  display: inline-block;
+  text-decoration: none;
+}
+
+.twitter_img {
+  height: 20px;
+  width: 25px;
+}
+
+.facebook_img {
+  height: 20px;
+  width: 12px;
+}
+
+/******************************************
+/* ADDITIONAL STYLES
+/*******************************************/
+
+/*Content*/
+
+h1 {
+  font-weight: 800;
+  color: white;
+  font-size: 24px;
+  margin-top: 0px;
+  padding-top: 15px;
+  padding-bottom: 50px;
+}
+
+h2 {
+  font-weight: 600;
+  color: white;
+  font-size: 24px;
+  text-align: center;
+  width: 100%;
+  padding-bottom: 30px;
+}
+
+h3 {
+  font-weight: 600;
+  color:#033048;
+  font-size: 20px;
+}
+
+p {
+  font-weight: 600;
+  font-size: 14px;
+  color: #121212;
+}
+
+a {
+  text-decoration: none;
+}
+
+.benefits_text {
+  font-weight: 200;
+  font-size: 13px;
+  color: #606161;
+  width: 50%;
+}
+
+blockquote {
+  font-weight: 200;
+  font-size: 18px;
+  color: white;
+  font-style: italic;
+  text-align: center;
+  margin-top: 0px;
+  padding-top: 60px;
+  margin: 0px 30%;
+}
+
+ul {
+  width: 45%;
+}
+
+.feature_text {
+  font-size: 14px;
+  font-weight: 600;
+  color: #121212;
+}
+
+.testimonial_author {
+  font-weight: 600;
+  font-size: 18px;
+  color: white;
+  text-align: center;
+  margin-top: 5px;
+  width: 100%;
+}
+
+.content_list {
+  font-weight: 200;
+  font-size: 13px;
+  color: #606161;
+}
+
+.footer_logo {
+  color: #f9e42e;
+  text-align: center;
+  padding-top: 30px;
+  padding-bottom: 10px;
+}
+
+
+.footer_text {
+  font-weight: 200;
+  font-size: 10px;
+  color: white;
+  text-align: center;
+  width: 100%;
+}
+
+/*Buttons*/
+
+.button_hero {
+  background-color: #f9e42e;
+  color: #033048;
+  font-size: 14px;
+  font-weight: 700;
+  border-radius: 5px;
+  border-style: none;
+  padding: 10px 30px;
+  margin: auto;
+  display: block;
+}
+
+.primary_button {
+  background-color: #033048;
+  color: white;
+  font-size: 12px;
+  font-weight: 700;
+  border-radius: 5px;
+  border-style: none;
+  padding: 10px 30px;
+  margin: auto;
+  display: block;
+}
+
+.benefits_button {
+  float: right;
+  display: inline-block;
+  background-color: #f9e42e;
+  color: #033048;
+  font-size: 14px;
+  font-weight: 700;
+  border-radius: 5px;
+  border-style: none;
+  padding: 10px 30px;
+  margin-top: 100px;
+  margin-right: 25px;
+}

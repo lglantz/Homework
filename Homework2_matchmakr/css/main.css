@@ -1,0 +1,191 @@
+/******************************************
+/* LAYOUT
+/*******************************************/
+
+body {
+  font-family: 'Source Sans Pro', sans-serif;
+}
+
+nav {
+  background-color: black;
+  border-bottom: 5px solid #ffff00;
+}
+
+footer {
+  background-color: black;
+}
+
+.nav-wrapper {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  color: white;
+  margin-right: 25px;
+}
+
+.quote-section {
+  background-color: #c6c6c6;
+  height: 65px;
+  border-top: 1px solid darkgray;
+  box-shadow: 0px 1px 1px #888888;
+}
+
+/* Positioning Hero section aside */
+.hero-section {
+  background: url(../images/coworking.jpg) no-repeat center center rgb(134,141,157);
+  background-size: cover;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.hero-aside {
+  width: 33%;
+  background: rgba(255,255,255,0.8);
+  padding: 20px;
+  margin: 35px 35px;
+  border-radius: 1px;
+  box-shadow: 0 0 5px rgba(0,0,0,.75);
+  line-height: 25px;
+}
+
+/* Positioning 3 content columns */
+.cta-wrapper {
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
+}
+
+.content-left, .content-mid, .content-right {
+  padding: 20px 20px 0px 20px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.content-left {
+  border-right: 1px solid lightgrey;
+}
+
+.content-right {
+  border-left: 1px solid lightgrey;
+}
+
+/******************************************
+/* CONTENT
+/*******************************************/
+
+h1 {
+  font-family: 'Oswald', sans-serif;
+  color: #ffff00;
+  margin: 0px;
+  padding: 10px 0px 7px 20px;
+}
+
+h2 {
+  font-family: 'Oswald', sans-serif;
+  font-size: 30px;
+  font-weight: 800;
+  letter-spacing: 1px;
+}
+
+h3 {
+  font-family: 'Oswald', sans-serif;
+  font-size: 24px;
+  margin-top: 0px;
+  letter-spacing: 1px;
+}
+
+p {
+  font-size: 20px;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* Navigation hover state */
+a:hover {
+  color: #ffff00;
+}
+
+/* Quote styling */
+blockquote {
+  text-align: center;
+  font-style: italic;
+  font-size: 24px;
+  margin-top: 0px;
+  padding-top: 17px;
+  font-weight: 600;
+}
+
+/* Navigation links */
+.nav-large, .nav-small {
+  margin: 0 .5em 15px .5em;
+  color: white;
+}
+
+.nav-large {
+  font-family: 'Oswald', sans-serif;
+  font-weight: 800;
+  font-size: 20px;
+  text-transform: uppercase;
+}
+
+/* Quote span styles */
+.taste-content {
+  color: gray;
+  text-decoration: line-through;
+}
+
+.are-content {
+  /*text-decoration: underline;
+  text-decoration-color: #ffff00;*/
+  border-bottom: 3px solid #ffff00;
+}
+
+/* Footer text style */
+.legal-text {
+  font-size: 16px;
+  padding: 15px 0 15px 25px;
+  color: white;
+  margin: 0px;
+}
+
+/***** Buttons! *****/
+ button {
+   font-size: 20px;
+   border-radius: 4px;
+   text-align: center;
+   display: block;
+   font-family: 'Oswald', sans-serif;
+   font-weight: 800;
+   text-transform: uppercase;
+ }
+
+ .yellow-button {
+   background-color: #ffff00;
+   opacity: 1;
+   border: none;
+   border-bottom: 3px solid #b4b400;
+   font-weight: 900;
+   width: 100%;
+   margin: 0px auto;
+   padding: 12px;
+ }
+
+.yellow-button:hover {
+  background-color: #EEEE02;
+}
+
+ .gray-button {
+   background-color: lightgrey;
+   border: none;
+   border-bottom: 3px solid darkgray;
+   font-weight: 900;
+   width: 100%;
+   margin: 40px auto 20px auto;
+   padding: 12px;
+ }
+
+ .gray-button:hover {
+   background-color: #aaaaaa;
+ }
