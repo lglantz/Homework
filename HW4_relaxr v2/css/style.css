@@ -1,0 +1,296 @@
+/*
+Project Name: Blank Template
+Client: Your Client
+Author: Your Name
+Developer @GA in NYC
+*/
+
+
+/******************************************
+/* SETUP
+/*******************************************/
+
+/* Box Model Hack */
+* {
+     box-sizing: border-box;
+}
+
+/* Clear fix hack */
+.clearfix:after {
+     content: ".";
+     display: block;
+     clear: both;
+     visibility: hidden;
+     line-height: 0;
+     height: 0;
+}
+
+.clear {
+  clear: both;
+}
+
+.alignright {
+  float: right;
+  padding: 0 0 10px 10px; /* note the padding around a right floated image */
+}
+
+.alignleft {
+  float: left;
+  padding: 0 10px 10px 0; /* note the padding around a left floated image */
+}
+
+/******************************************
+/* BASE STYLES
+/*******************************************/
+header {
+  background-color: #033048;
+  display: flex;
+  height: 75px;
+}
+
+
+body {
+     color: #000;
+     font-family: 'Open Sans', sans-serif;
+     font-size: 12px;
+     line-height: 1.4;
+}
+
+.container {
+  max-width: 960px;
+  margin: 0px auto;
+  padding: 0 25px;
+}
+
+/******************************************
+/* LAYOUT
+/*******************************************/
+
+.nav-wrapper {
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.nav-wrapper-right {
+  align-items: center;
+  display: flex;
+  justify-content: flex-end;
+  width: 75%;
+
+}
+
+.nav-wrapper-left {
+  align-items: center;
+  display: flex;
+  justify-content: flex-start;
+  width: 25%;
+}
+
+.blog-section {
+  background-color: #f0efef;
+  padding-bottom: 60px;
+}
+
+.blog-wrapper {
+  align-items: flex-start;
+  display: flex;
+  justify-content: space-between;
+}
+
+.blog-wrapper-left, .blog-wrapper-right {
+  margin-top: 15px;
+}
+
+.blog-wrapper-left {
+  width: 64%;
+  margin-right: 3%;
+}
+
+.blog-wrapper-right {
+  width: 33%;
+}
+
+
+.blog {
+  margin-top: 25px;
+}
+
+.blog-img-container-1, .blog-img-container-2 {
+  border-radius: 3px;
+  height: 280px;
+  margin-bottom: 20px;
+  overflow: hidden;
+}
+
+.blog-img-container-1 {
+  background: url(../images/blog_photo1.jpg) no-repeat center center;
+}
+
+.blog-img-container-2 {
+  background: url(../images/blog_photo2.jpg) no-repeat center center;
+}
+
+/*Flexbox to float read mroe button right*/
+.read-more-button-wrapper {
+  align-content: center;
+  border-bottom: 2px solid #033048;
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 15px;
+}
+
+.right-aside-2 {
+  margin-bottom: 35px;
+}
+
+.sign-up-section {
+  align-content: center;
+  background-color: #f9e42e;
+  display: flex;
+  height: 75px;
+  justify-content: center;
+}
+
+.footer-section {
+    height: 200px;
+    background-color: #121212;
+}
+
+.footer-img-wrapper {
+  align-content: center;
+  display: flex;
+  justify-content: space-around;
+  width: 90px;
+  margin: 15px auto;
+}
+
+.twitter_img {
+  height: 20px;
+  width: 25px;
+}
+
+.facebook_img {
+  height: 20px;
+  width: 12px;
+  margin-right: 5px;
+}
+
+/******************************************
+/* ADDITIONAL STYLES
+/*******************************************/
+
+.logo {
+  color: white;
+  font-size: 28px;
+  font-weight: 600;
+}
+
+.nav-element {
+  color: #f9e42e;
+  padding-left: 30px;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+.blog-title {
+  color: #033048;
+  font-size: 24px;
+  font-weight: 600;
+  margin-bottom: 15px;
+}
+
+.blog-text {
+  color: #606161;
+  font-size: 14px;
+  font-weight: 300px;
+  padding-right: 5px;
+}
+
+/*Drop cap for blog posts*/
+.blog-text::first-letter {
+  float: left;
+  font-size: 40px;
+  font-weight: 600;
+  line-height: 115%;
+  margin: 0 5px 0 0;
+}
+
+.read-more-button {
+  color: #033048;
+  font-size: 18px;
+  font-weight: 600;
+  padding-bottom: 25px;
+  text-decoration: none;
+}
+
+.aside-title {
+  color: #033048;
+  font-size: 20px;
+  font-weight: 800;
+  margin-bottom: 5px;
+  margin-top: 15px;
+}
+
+.sub-nav {
+  margin-bottom: 25px;
+}
+
+.sub-nav li {
+  padding: 1px 0;
+}
+
+.sub-nav-element {
+  color: #033048;
+  font-size: 14px;
+  font-weight: 300;
+  text-decoration: none;
+}
+
+.about-text {
+  color: #033048;
+  font-size: 14px;
+  font-weight: 300;
+  padding-right: 5px;
+}
+
+.about-text-learn-more {
+  color: #033048;
+  font-size: 14px;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.footer_logo {
+  font-size: 28px;
+  font-weight: 900;
+  color: #f9e42e;
+  text-align: center;
+  padding-top: 30px;
+  padding-bottom: 10px;
+  margin-top: 0px;
+}
+
+/* Buttons */
+
+.button-blue {
+/*You're my boy blue!*/
+  background-color: #033048;
+  border-radius: 5px;
+  border-style: none;
+  color: white;
+  display: block;
+  font-size: 12px;
+  font-weight: 700;
+  padding: 10px 50px;
+  margin: auto;
+}
+
+.footer_text {
+  font-weight: 300;
+  font-size: 10px;
+  color: white;
+  text-align: center;
+  width: 100%;
+}
