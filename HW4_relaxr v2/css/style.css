@@ -189,7 +189,7 @@ body {
 
 .nav-element {
   color: #f9e42e;
-  padding-left: 30px;
+  margin-left: 30px;
   text-decoration: none;
   font-size: 14px;
 }
@@ -221,7 +221,7 @@ body {
   color: #033048;
   font-size: 18px;
   font-weight: 600;
-  padding-bottom: 25px;
+  margin-bottom: 25px;
   text-decoration: none;
 }
 
@@ -272,6 +272,14 @@ body {
   margin-top: 0px;
 }
 
+.footer_text {
+  font-weight: 300;
+  font-size: 10px;
+  color: white;
+  text-align: center;
+  width: 100%;
+}
+
 /* Buttons */
 
 .button-blue {
@@ -285,12 +293,4 @@ body {
   font-weight: 700;
   padding: 10px 50px;
   margin: auto;
-}
-
-.footer_text {
-  font-weight: 300;
-  font-size: 10px;
-  color: white;
-  text-align: center;
-  width: 100%;
 }
