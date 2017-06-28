@@ -10,6 +10,9 @@ $(document).ready(function() {
 $(document).ready(function() {
   $('.readless').click(function() {
     event.preventDefault();
+    // Added this function to 'gate' the hide/show of the
+    // buttons. Is there a better way to mess with animation
+    // queues/order?
     $('#show-this-on-click').slideUp(function () {
       $('.readless').hide();
       $('.readmore').show();
