@@ -2,6 +2,8 @@
 $('#submit-btn').click(function() {
   // Prevents the button press from submitting
   event.preventDefault();
+  // Remove error text (if any)
+  $('#error-text').text("");
   // Defines a var of the user input
   var city = $('#city-type').val().toLowerCase();
   // Compares city to pre-set values
@@ -28,10 +30,6 @@ $('#submit-btn').click(function() {
   // Resets the image to skyline if the input doesn't match a preset value
   else {
     $('body').removeClass();
-  /* Add code to do error handleing when we learn how
-
-
-
-  */
+    $('#error-text').text("You must enter a valid city");
   }
 });

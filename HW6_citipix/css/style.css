@@ -143,9 +143,9 @@ header {
 /* ADDITIONAL STYLES
 /*******************************************/
 
-/*#error-text {
+#error-text {
   color: red;
   font-size: 24px;
   margin-top: 5px;
   margin-left: 10px;
-}*/
+}
